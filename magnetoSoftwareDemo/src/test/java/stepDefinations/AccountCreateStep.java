@@ -3,14 +3,14 @@ package stepDefinations;
 
 
 import org.junit.Assert;
-import com.pages.CreateAccount;
-import com.utils.ConfigRead;
-import com.utils.DriverFactory;
-import com.utils.EmailData;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.CreateAccount;
+import utils.ConfigRead;
+import utils.DriverFactory;
+import utils.EmailData;
 
 public class AccountCreateStep {
 	private String actualMsg;

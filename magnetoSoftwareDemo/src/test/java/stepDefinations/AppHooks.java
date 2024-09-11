@@ -4,11 +4,10 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 
-import com.utils.ConfigRead;
-import com.utils.DriverFactory;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import utils.ConfigRead;
+import utils.DriverFactory;
 
 public class AppHooks {
 	private DriverFactory driverFactory;

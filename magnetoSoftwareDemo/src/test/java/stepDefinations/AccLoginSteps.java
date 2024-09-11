@@ -2,13 +2,12 @@ package stepDefinations;
 
 
 import org.junit.Assert;
-import com.pages.AccountLogin;
-
-import com.utils.DriverFactory;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.AccountLogin;
+import utils.DriverFactory;
 
 public class AccLoginSteps {
 	

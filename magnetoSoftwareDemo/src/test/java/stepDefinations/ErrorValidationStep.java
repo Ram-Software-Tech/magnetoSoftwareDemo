@@ -2,12 +2,11 @@ package stepDefinations;
 
 import org.junit.Assert;
 
-import com.pages.CreateAccount;
-import com.pages.InputErrorValidation;
-import com.utils.DriverFactory;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pages.CreateAccount;
+import pages.InputErrorValidation;
+import utils.DriverFactory;
 
 public class ErrorValidationStep {
 	private InputErrorValidation inputErrors=new InputErrorValidation(DriverFactory.getDriver());
