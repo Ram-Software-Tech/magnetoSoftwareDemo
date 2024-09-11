@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>magnetoSoftwareDemo</td>
+              <td>1</td>
+            <td>11 Sep 2024, 16:28</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">stepDefinations.AccLoginSteps.user_clicks_on_sign_in_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="3388816900">3s 388ms</td>
+              <td class="duration" data-value="3388816900">3s 388ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccLoginSteps.user_clicks_on_sign_in_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="3078595000">3s 078ms</td>
+              <td class="duration" data-value="3078595000">3s 078ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccLoginSteps.user_enters_valid_password(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="361088600">361ms</td>
+              <td class="duration" data-value="361088600">361ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccLoginSteps.user_inputs_valid_user_name_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="568142600">568ms</td>
+              <td class="duration" data-value="568142600">568ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccLoginSteps.user_navigates_to_magento_website()</td>
+              <td>1</td>
+              <td class="duration" data-value="7768287200">7s 768ms</td>
+              <td class="duration" data-value="7768287200">7s 768ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccLoginSteps.user_validates_greeting_text(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="923701300">923ms</td>
+              <td class="duration" data-value="923701300">923ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccountCreateStep.user_click_on_create_an_account_button()</td>
+              <td>4</td>
+              <td class="duration" data-value="5506034500">5s 506ms</td>
+              <td class="duration" data-value="1376508625">1s 376ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccountCreateStep.user_clicks_on_create_an_account_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="2933248900">2s 933ms</td>
+              <td class="duration" data-value="2933248900">2s 933ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccountCreateStep.user_enters_confirm_password_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="275068600">275ms</td>
+              <td class="duration" data-value="275068600">275ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccountCreateStep.user_enters_email_as(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="1158301000">1s 158ms</td>
+              <td class="duration" data-value="386100333">386ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccountCreateStep.user_enters_first_name_as(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="1492373200">1s 492ms</td>
+              <td class="duration" data-value="497457733">497ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccountCreateStep.user_enters_last_name_as(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="1120279600">1s 120ms</td>
+              <td class="duration" data-value="373426533">373ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccountCreateStep.user_enters_password_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="351086100">351ms</td>
+              <td class="duration" data-value="351086100">351ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccountCreateStep.user_navigates_to_magneto_URL()</td>
+              <td>1</td>
+              <td class="duration" data-value="12758302600">12s 758ms</td>
+              <td class="duration" data-value="12758302600">12s 758ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AccountCreateStep.user_validates_successful_message_as(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="247060900">247ms</td>
+              <td class="duration" data-value="247060900">247ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AppHooks.getProperty()</td>
+              <td>5</td>
+              <td class="duration" data-value="6998400">006ms</td>
+              <td class="duration" data-value="1399680">001ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AppHooks.launchBrowser()</td>
+              <td>5</td>
+              <td class="duration" data-value="21480565600">21s 480ms</td>
+              <td class="duration" data-value="4296113120">4s 296ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.AppHooks.quitBrowser()</td>
+              <td>5</td>
+              <td class="duration" data-value="4581130900">4s 581ms</td>
+              <td class="duration" data-value="916226180">916ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.ErrorValidationStep.user_clicks_create_an_account_link()</td>
+              <td>3</td>
+              <td class="duration" data-value="9037115200">9s 037ms</td>
+              <td class="duration" data-value="3012371733">3s 012ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.ErrorValidationStep.user_navigates_to_magento_website_url()</td>
+              <td>3</td>
+              <td class="duration" data-value="27758023200">27s 758ms</td>
+              <td class="duration" data-value="9252674400">9s 252ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.ErrorValidationStep.user_should_get_error_message_under_email_field(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="73014700">073ms</td>
+              <td class="duration" data-value="73014700">073ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.ErrorValidationStep.user_should_get_error_message_under_first_name_field(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="92025900">092ms</td>
+              <td class="duration" data-value="92025900">092ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">stepDefinations.ErrorValidationStep.user_should_get_error_message_under_last_name_field(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="153039400">153ms</td>
+              <td class="duration" data-value="153039400">153ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>23</td>
+            <td>48</td>
+            <td class="duration">1m 45s 112ms</td>
+            <td class="duration">2s 189ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

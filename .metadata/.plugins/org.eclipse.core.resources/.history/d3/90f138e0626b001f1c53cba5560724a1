@@ -1,0 +1,59 @@
+package com.steps;
+
+
+import com.pages.CreateAccount;
+import com.utils.DriverFactory;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class AccountCreateStep {
+	
+	private CreateAccount createAcc=new CreateAccount(DriverFactory.getDriver());
+	@Given("user navigates to URL {string}")
+	public void user_navigates_to_url(String url) {
+	    DriverFactory.getDriver().get(url);
+	}
+
+	@When("user clicks on Create an Account Button")
+	public void user_clicks_on_create_an_account_button() {
+	    
+	}
+
+	@Given("user enters First Name as {string}")
+	public void user_enters_first_name_as(String string) {
+		
+	}
+	    
+
+	@Given("user enters Last Name as {string}")
+	public void user_enters_last_name_as(String string) {
+	    
+	}
+
+	@Given("user enters Email as {string}")
+	public void user_enters_email_as(String string) {
+	    
+	}
+
+	@Given("user enters Password as {string}")
+	public void user_enters_password_as(String string) {
+	    
+	}
+
+	@Given("user enters Confirm Password as {string}")
+	public void user_enters_confirm_password_as(String string) {
+	    
+	}
+
+	@Given("user click on Create an Account button")
+	public void user_click_on_create_an_account_button() {
+	   
+	}
+
+	@Then("user validates title {string}.")
+	public void user_validates_title(String string) {
+	    
+	}
+}

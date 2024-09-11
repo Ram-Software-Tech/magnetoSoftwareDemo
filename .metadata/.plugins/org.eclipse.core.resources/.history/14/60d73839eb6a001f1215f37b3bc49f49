@@ -1,0 +1,34 @@
+package com.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class CreateAccount {
+
+	public void CreateAccount() {
+		
+	}
+	@FindBy (xpath = "//a[contains(text(), 'Create an Account')]")
+    public WebElement CreateAccountBtn;
+    
+    @FindBy (xpath = "//input[@id='firstname']")
+    public WebElement firstNameInputField;
+
+    @FindBy (xpath = "//input[@id='lastname']")
+    public WebElement lastNameInputField;
+
+    @FindBy (xpath = "//input[@id='email_address']")
+    public WebElement emailAddressInputField;
+
+
+    @FindBy (xpath = "//input[@id='password']")
+    public WebElement  passwordInputField;
+
+
+    @FindBy (xpath = "//input[@id='password-confirmation']")
+    public WebElement  passwordConfirmationInputField;
+
+
+    @FindBy (xpath = "//button[@class='action submit primary']")
+    public WebElement  createAnAccountBtn;
+}

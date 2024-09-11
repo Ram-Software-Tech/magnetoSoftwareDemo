@@ -1,0 +1,8 @@
+Feature: Account login
+
+   
+      Scenario: user navigates to magento website nad logs in with valid login data
+      Given user navigates to Magento website
+      When user clicks on sign in link
+      And user inputs valid user name and password
+      Then user validates greeting text "Welcome, Amira Yata!".

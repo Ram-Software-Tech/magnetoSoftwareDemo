@@ -1,0 +1,48 @@
+package com.steps;
+
+import org.junit.Assert;
+
+import com.pages.AccountLogin;
+import com.pages.CreateAccount;
+import com.utils.DriverFactory;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class AccLoginSteps {
+	
+	private AccountLogin loginAcc=new AccountLogin(DriverFactory.getDriver());
+	
+
+	@Given("user navigates to Magento website")
+	public void user_navigates_to_magento_website() {
+		DriverFactory.getDriver().get("https://magento.softwaretestingboard.com/");
+	}
+
+	@When("user clicks on Sign In link")
+	public void user_clicks_on_sign_in_link() {
+		loginAcc.clickonSignInLink();
+	}
+
+	@When("user inputs valid user name as {string}")
+	public void user_inputs_valid_user_name_as(String username) {
+		loginAcc.enterEmail(username);
+	}
+
+	@When("user inputs valid user password as\"lara_{int}\"")
+	public void user_inputs_valid_user_password_as_lara(String password) {
+		loginAcc.enterPass(password);
+	}
+
+
+	@When("user clicks on Sign In button")
+	public void user_clicks_on_sign_in_button() {
+		loginAcc.clickSignBtn();
+	}
+
+	@Then("user validates greeting text {string}.")
+	public void user_validates_greeting_text(String msg) {
+		 Assert.assertEquals(msg, loginAcc.verifyLoginMsg());
+	}
+}

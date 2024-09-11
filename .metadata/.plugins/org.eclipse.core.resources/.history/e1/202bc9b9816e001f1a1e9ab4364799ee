@@ -1,0 +1,10 @@
+package stepDefinations;
+
+import com.pages.InputErrorValidation;
+import com.utils.DriverFactory;
+
+public class ErrorValidationStep {
+	private InputErrorValidation inputErrors=new InputErrorValidation(DriverFactory.getDriver());
+	
+ 
+}

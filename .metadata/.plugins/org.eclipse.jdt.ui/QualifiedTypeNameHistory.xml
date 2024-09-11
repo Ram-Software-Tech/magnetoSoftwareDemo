@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="io.github.bonigarcia.wdm.WebDriverManager"/>
+    <fullyQualifiedTypeName name="com.pages.CreateAccount"/>
+    <fullyQualifiedTypeName name="com.utils.DriverFactory"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.When"/>
+    <fullyQualifiedTypeName name="com.pages.AccountLogin"/>
+    <fullyQualifiedTypeName name="com.steps.AccountCreateStep"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="com.pages.InputErrorValidation"/>
+    <fullyQualifiedTypeName name="com.utils.ConfigRead"/>
+</qualifiedTypeNameHistroy>
